@@ -143,8 +143,8 @@ function onUp() {
 
 function resizeCanvas() {
     const elContainer = document.querySelector('.canvas-container')
-    gElCanvas.width = elContainer.offsetWidth - 100
-    gElCanvas.height = elContainer.offsetHeight - 100
+    gElCanvas.width = elContainer.offsetWidth - 20
+    gElCanvas.height = elContainer.offsetHeight - 20
 
 }
 

@@ -12,7 +12,7 @@ body {
   
   .canvas-container {
     display: flex;
-    width: 60vw;
+    width: 80vw;
     height: 80vh;
     justify-content: center;
     align-items: center;
