@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Html Canvas</title>
+</head>
+
+<body onload="onInit()">
+    <button class="btn" onclick="uploadImg()">Upload Image from Canvas</button>
+        <p class="user-msg"></p>
+        <div class="share-container"></div>
+    <form class="set-canvas-settings" onchange="onSetColors(event,this)">
+        <input type="color" name="fillColor" form="frmRegister" value="#424141" /><br />
+        <input type="color" name="borderColor" form="frmRegister" value="#FF0059" />
+        <select class="shape" onchange="onSetShape(this.value)">
+            <option value="circle">Circle</option>
+            <option value="rectangle">Rectangle</option>
+            <option value="triangle">Triangle</option>
+            <option value="line">Line</option>
+        </select>
+    </form>
+    <div class="canvas-container">
+        <canvas width="400" height="400" style="background-color: black" style="outline:1px solid green"></canvas>
+    </div>
+    <button onclick="clearCanvas()">Clear</button>
+    <a href="#" onclick="downloadCanvas(this)" download="cool-canvas">Download</a>
+    <script src="js/services/upload-service.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/settings.service.js"></script>
+    <script src="js/services/shape.service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
